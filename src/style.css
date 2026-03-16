@@ -1,0 +1,340 @@
+/* ============================================================
+   LSEG Interview Guide — Print Stylesheet (WeasyPrint)
+   ============================================================ */
+
+/* --- Page Setup ------------------------------------------- */
+@page {
+    size: A4;
+    margin: 25mm 20mm 25mm 20mm;
+
+    @top-center {
+        content: "LSEG Associate Lead SDET — Interview Guide";
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 8pt;
+        color: #666;
+        border-bottom: 0.5pt solid #ccc;
+        padding-bottom: 4pt;
+    }
+
+    @bottom-right {
+        content: "Page " counter(page);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 8pt;
+        color: #666;
+    }
+
+    @bottom-left {
+        content: "Confidential";
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 8pt;
+        color: #999;
+    }
+}
+
+/* Suppress header/footer on cover page */
+@page cover {
+    @top-center { content: none; }
+    @bottom-right { content: none; }
+    @bottom-left { content: none; }
+}
+
+/* Suppress header/footer on TOC page */
+@page toc {
+    @top-center { content: none; }
+    @bottom-right {
+        content: "Page " counter(page);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 8pt;
+        color: #666;
+    }
+    @bottom-left { content: none; }
+}
+
+/* --- Cover Page ------------------------------------------- */
+.cover-page {
+    page: cover;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.cover-page .logo-bar {
+    width: 60%;
+    height: 4px;
+    background: #003366;
+    margin-bottom: 40pt;
+}
+
+.cover-page h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32pt;
+    color: #003366;
+    margin: 0 0 10pt 0;
+    letter-spacing: 1pt;
+}
+
+.cover-page .subtitle {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16pt;
+    color: #555;
+    margin: 0 0 6pt 0;
+}
+
+.cover-page .candidate {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14pt;
+    color: #333;
+    margin: 30pt 0 6pt 0;
+}
+
+.cover-page .date {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12pt;
+    color: #777;
+    margin: 6pt 0 0 0;
+}
+
+.cover-page .logo-bar-bottom {
+    width: 40%;
+    height: 2px;
+    background: #003366;
+    margin-top: 40pt;
+}
+
+/* --- Table of Contents ------------------------------------ */
+.toc {
+    page: toc;
+    page-break-after: always;
+}
+
+.toc h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22pt;
+    color: #003366;
+    border-bottom: 2pt solid #003366;
+    padding-bottom: 6pt;
+    margin-bottom: 18pt;
+}
+
+.toc ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc li {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 2.4;
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+}
+
+.toc li a {
+    text-decoration: none;
+    color: #003366;
+    display: block;
+}
+
+.toc li a::after {
+    content: target-counter(attr(href), page);
+    float: right;
+    font-weight: normal;
+    color: #666;
+    padding-left: 6pt;
+    background: #fff;
+}
+
+/* --- Typography ------------------------------------------- */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #222;
+}
+
+/* --- Headings --------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #003366;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+h1 {
+    font-size: 22pt;
+    border-bottom: 2pt solid #003366;
+    padding-bottom: 6pt;
+    margin-top: 0;
+    margin-bottom: 12pt;
+}
+
+h2 {
+    font-size: 16pt;
+    border-bottom: 1pt solid #99aacc;
+    padding-bottom: 4pt;
+    margin-top: 20pt;
+    margin-bottom: 10pt;
+}
+
+h3 {
+    font-size: 13pt;
+    margin-top: 16pt;
+    margin-bottom: 8pt;
+}
+
+h4 {
+    font-size: 11pt;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+}
+
+/* --- Paragraphs & Lists ---------------------------------- */
+p {
+    margin: 0 0 8pt 0;
+    text-align: justify;
+}
+
+ul, ol {
+    margin: 0 0 8pt 0;
+    padding-left: 20pt;
+}
+
+li {
+    margin-bottom: 3pt;
+}
+
+/* --- Tables ---------------------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10pt 0 14pt 0;
+    font-size: 9pt;
+    table-layout: fixed;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+thead th {
+    background-color: #003366;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    padding: 6pt 8pt;
+    border: 1px solid #003366;
+}
+
+tbody td {
+    padding: 5pt 8pt;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f5fa;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Wide tables — auto-applied via class */
+table.wide-table {
+    font-size: 8pt;
+}
+
+table.wide-table th,
+table.wide-table td {
+    padding: 4pt 5pt;
+}
+
+/* --- Code Blocks ----------------------------------------- */
+code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 8.5pt;
+    background-color: #f4f4f4;
+    padding: 1pt 3pt;
+    border-radius: 2pt;
+}
+
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-left: 3px solid #003366;
+    padding: 10pt 12pt;
+    margin: 8pt 0 12pt 0;
+    font-size: 8pt;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    page-break-inside: auto;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+}
+
+/* --- Blockquotes ----------------------------------------- */
+blockquote {
+    border-left: 4px solid #003366;
+    background: #eef2f8;
+    margin: 8pt 0 12pt 0;
+    padding: 8pt 12pt;
+    color: #333;
+    font-style: italic;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* --- Horizontal Rules ------------------------------------ */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 16pt 0;
+}
+
+/* --- Links ----------------------------------------------- */
+a {
+    color: #003366;
+    text-decoration: underline;
+}
+
+/* --- Strong / Em ----------------------------------------- */
+strong {
+    color: #111;
+}
+
+/* --- Chapter Sections ------------------------------------ */
+.chapter {
+    page-break-before: always;
+}
+
+.chapter:first-of-type {
+    page-break-before: auto;
+}
+
+/* Keep headings with content */
+.chapter h1,
+.chapter h2,
+.chapter h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+    orphans: 3;
+    widows: 3;
+}
+
+/* Avoid orphan/widow lines */
+p, li {
+    orphans: 2;
+    widows: 2;
+}
