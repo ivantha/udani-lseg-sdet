@@ -22,9 +22,6 @@ OUTPUT_PDF = OUTPUT_DIR / "interview_guide.pdf"
 # ---------------------------------------------------------------------------
 CHAPTERS = [
     ("job_description.md", "Job Description"),
-    ("jd_critique.md", "Job Description Analysis"),
-    ("cv.md", "Curriculum Vitae"),
-    ("cv_critique.md", "CV Gap Analysis"),
     ("interviewer_amy_lee.md", "Interviewer: Amy Lee"),
     ("interviewer_andy_purtell.md", "Interviewer: Andy Purtell"),
     ("interview_guide_udani.md", "Personalised Interview Guide"),
