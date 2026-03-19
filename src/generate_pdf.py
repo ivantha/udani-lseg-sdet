@@ -98,8 +98,9 @@ def build_cover_page() -> str:
     <div class="logo-bar"></div>
     <h1>Interview Guide</h1>
     <p class="subtitle">Associate Lead SDET — LSEG (London Stock Exchange Group)</p>
-    <p class="candidate">Prepared for Udani Weerasinghe</p>
+    <p class="candidate">Udani Weerasinghe</p>
     <p class="date">{today}</p>
+    <p class="personal-note">Prepared with care for the most radiant SDET London's ever seen. ☀️</p>
     <div class="logo-bar-bottom"></div>
 </div>
 """

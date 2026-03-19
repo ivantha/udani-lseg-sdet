@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>LSEG Interview Guide</title>
     <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
 /* ============================================================
    LSEG Interview Guide — Print Stylesheet (WeasyPrint)
    ============================================================ */
@@ -11,11 +13,11 @@
 /* --- Page Setup ------------------------------------------- */
 @page {
     size: A4;
-    margin: 25mm 20mm 25mm 20mm;
+    margin: 20mm 18mm 20mm 18mm;
 
     @top-center {
         content: "LSEG Associate Lead SDET — Interview Guide";
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: "Roboto", sans-serif;
         font-size: 8pt;
         color: #666;
         border-bottom: 0.5pt solid #ccc;
@@ -24,14 +26,14 @@
 
     @bottom-right {
         content: "Page " counter(page);
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: "Roboto", sans-serif;
         font-size: 8pt;
         color: #666;
     }
 
     @bottom-left {
         content: "Confidential";
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: "Roboto", sans-serif;
         font-size: 8pt;
         color: #999;
     }
@@ -49,7 +51,7 @@
     @top-center { content: none; }
     @bottom-right {
         content: "Page " counter(page);
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: "Roboto", sans-serif;
         font-size: 8pt;
         color: #666;
     }
@@ -76,7 +78,7 @@
 }
 
 .cover-page h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 32pt;
     color: #003366;
     margin: 0 0 10pt 0;
@@ -84,24 +86,32 @@
 }
 
 .cover-page .subtitle {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16pt;
     color: #555;
     margin: 0 0 6pt 0;
 }
 
 .cover-page .candidate {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14pt;
     color: #333;
     margin: 30pt 0 6pt 0;
 }
 
 .cover-page .date {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 12pt;
     color: #777;
     margin: 6pt 0 0 0;
+}
+
+.cover-page .personal-note {
+    font-family: "Roboto", sans-serif;
+    font-size: 13pt;
+    color: #7B2D8E;
+    font-style: italic;
+    margin: 30pt 0 0 0;
 }
 
 .cover-page .logo-bar-bottom {
@@ -118,7 +128,7 @@
 }
 
 .toc h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 22pt;
     color: #003366;
     border-bottom: 2pt solid #003366;
@@ -133,9 +143,9 @@
 }
 
 .toc li {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 11pt;
-    line-height: 2.4;
+    line-height: 2.0;
     border-bottom: 1px dotted #ccc;
     overflow: hidden;
 }
@@ -157,69 +167,69 @@
 
 /* --- Typography ------------------------------------------- */
 body {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 10pt;
-    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.35;
     color: #222;
 }
 
 /* --- Headings --------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Roboto", sans-serif;
     color: #003366;
     page-break-after: avoid;
     break-after: avoid;
 }
 
 h1 {
-    font-size: 22pt;
+    font-size: 20pt;
     border-bottom: 2pt solid #003366;
     padding-bottom: 6pt;
     margin-top: 0;
-    margin-bottom: 12pt;
+    margin-bottom: 8pt;
 }
 
 h2 {
-    font-size: 16pt;
+    font-size: 14pt;
     border-bottom: 1pt solid #99aacc;
     padding-bottom: 4pt;
-    margin-top: 20pt;
-    margin-bottom: 10pt;
+    margin-top: 14pt;
+    margin-bottom: 6pt;
 }
 
 h3 {
-    font-size: 13pt;
-    margin-top: 16pt;
-    margin-bottom: 8pt;
+    font-size: 11.5pt;
+    margin-top: 12pt;
+    margin-bottom: 5pt;
 }
 
 h4 {
     font-size: 11pt;
-    margin-top: 12pt;
-    margin-bottom: 6pt;
+    margin-top: 8pt;
+    margin-bottom: 4pt;
 }
 
 /* --- Paragraphs & Lists ---------------------------------- */
 p {
-    margin: 0 0 8pt 0;
+    margin: 0 0 5pt 0;
     text-align: justify;
 }
 
 ul, ol {
-    margin: 0 0 8pt 0;
+    margin: 0 0 5pt 0;
     padding-left: 20pt;
 }
 
 li {
-    margin-bottom: 3pt;
+    margin-bottom: 2pt;
 }
 
 /* --- Tables ---------------------------------------------- */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 10pt 0 14pt 0;
-    font-size: 9pt;
+    margin: 6pt 0 10pt 0;
+    font-size: 8.5pt;
     table-layout: fixed;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -230,12 +240,12 @@ thead th {
     color: #fff;
     font-weight: bold;
     text-align: left;
-    padding: 6pt 8pt;
+    padding: 4pt 6pt;
     border: 1px solid #003366;
 }
 
 tbody td {
-    padding: 5pt 8pt;
+    padding: 3pt 6pt;
     border: 1px solid #ccc;
     vertical-align: top;
 }
@@ -271,8 +281,8 @@ pre {
     background-color: #f8f8f8;
     border: 1px solid #ddd;
     border-left: 3px solid #003366;
-    padding: 10pt 12pt;
-    margin: 8pt 0 12pt 0;
+    padding: 6pt 10pt;
+    margin: 5pt 0 8pt 0;
     font-size: 8pt;
     line-height: 1.4;
     white-space: pre-wrap;
@@ -292,8 +302,8 @@ pre code {
 blockquote {
     border-left: 4px solid #003366;
     background: #eef2f8;
-    margin: 8pt 0 12pt 0;
-    padding: 8pt 12pt;
+    margin: 5pt 0 8pt 0;
+    padding: 5pt 10pt;
     color: #333;
     font-style: italic;
 }
@@ -306,7 +316,7 @@ blockquote p {
 hr {
     border: none;
     border-top: 1px solid #ccc;
-    margin: 16pt 0;
+    margin: 10pt 0;
 }
 
 /* --- Links ----------------------------------------------- */
@@ -429,8 +439,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     <div class="logo-bar"></div>
     <h1>Interview Guide</h1>
     <p class="subtitle">Associate Lead SDET — LSEG (London Stock Exchange Group)</p>
-    <p class="candidate">Prepared for Udani Weerasinghe</p>
+    <p class="candidate">Udani Weerasinghe</p>
     <p class="date">March 16, 2026</p>
+    <p class="personal-note">Prepared with care for the most radiant SDET London's ever seen. ☀️</p>
     <div class="logo-bar-bottom"></div>
 </div>
 
@@ -438,28 +449,25 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     <h2>Table of Contents</h2>
     <ol>
     <li><a href="#ch-1">1. Job Description</a></li>
-    <li><a href="#ch-2">2. Job Description Analysis</a></li>
-    <li><a href="#ch-3">3. Curriculum Vitae</a></li>
-    <li><a href="#ch-4">4. CV Gap Analysis</a></li>
-    <li><a href="#ch-5">5. Interviewer: Amy Lee</a></li>
-    <li><a href="#ch-6">6. Interviewer: Andy Purtell</a></li>
-    <li><a href="#ch-7">7. Personalised Interview Guide</a></li>
-    <li><a href="#ch-8">8. Question Bank Index</a></li>
-    <li><a href="#ch-9">9. Testing Fundamentals</a></li>
-    <li><a href="#ch-10">10. Test Automation & Programming</a></li>
-    <li><a href="#ch-11">11. Performance Testing</a></li>
-    <li><a href="#ch-12">12. Infrastructure, Cloud & Networking</a></li>
-    <li><a href="#ch-13">13. Financial Domain</a></li>
-    <li><a href="#ch-14">14. DevOps & SDLC</a></li>
-    <li><a href="#ch-15">15. Defect Management</a></li>
-    <li><a href="#ch-16">16. Leadership & Soft Skills</a></li>
-    <li><a href="#ch-17">17. Scenario-Based Questions</a></li>
-    <li><a href="#ch-18">18. Personal & Career</a></li>
-    <li><a href="#ch-19">19. AI & Modern QA</a></li>
-    <li><a href="#ch-20">20. Security Testing</a></li>
-    <li><a href="#ch-21">21. General SDET Questions</a></li>
-    <li><a href="#ch-22">22. AWS Cloud Guide</a></li>
-    <li><a href="#ch-23">23. DevOps Questions</a></li>
+    <li><a href="#ch-2">2. Interviewer: Amy Lee</a></li>
+    <li><a href="#ch-3">3. Interviewer: Andy Purtell</a></li>
+    <li><a href="#ch-4">4. Personalised Interview Guide</a></li>
+    <li><a href="#ch-5">5. Question Bank Index</a></li>
+    <li><a href="#ch-6">6. Testing Fundamentals</a></li>
+    <li><a href="#ch-7">7. Test Automation & Programming</a></li>
+    <li><a href="#ch-8">8. Performance Testing</a></li>
+    <li><a href="#ch-9">9. Infrastructure, Cloud & Networking</a></li>
+    <li><a href="#ch-10">10. Financial Domain</a></li>
+    <li><a href="#ch-11">11. DevOps & SDLC</a></li>
+    <li><a href="#ch-12">12. Defect Management</a></li>
+    <li><a href="#ch-13">13. Leadership & Soft Skills</a></li>
+    <li><a href="#ch-14">14. Scenario-Based Questions</a></li>
+    <li><a href="#ch-15">15. Personal & Career</a></li>
+    <li><a href="#ch-16">16. AI & Modern QA</a></li>
+    <li><a href="#ch-17">17. Security Testing</a></li>
+    <li><a href="#ch-18">18. General SDET Questions</a></li>
+    <li><a href="#ch-19">19. AWS Cloud Guide</a></li>
+    <li><a href="#ch-20">20. DevOps Questions</a></li>
     </ol>
 </div>
 
@@ -509,766 +517,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </section>
 
 <section class="chapter" id="ch-2">
-    <h1>Job Description Analysis</h1>
-    
-<p><strong>Job ID:</strong> R0098555
-<strong>Date of Review:</strong> 2026-03-15</p>
-<hr />
-<h2 id="executive-summary">Executive Summary</h2>
-<p>This job description suffers from a fundamental identity crisis: it carries an &ldquo;Associate Lead, SDET&rdquo; title but describes a mid-level QA analyst role with limited autonomy and traditional testing duties. The language is dated, the requirements mix legacy and modern technologies without coherence, and critical information candidates need to make informed decisions — salary, location, team structure, tech stack — is entirely absent. Below is a detailed examination.</p>
-<hr />
-<h2 id="strengths">Strengths</h2>
-<h3 id="1-clear-breadth-of-testing-types">1. Clear Breadth of Testing Types</h3>
-<p>The opening paragraph does enumerate the testing spectrum the role touches:</p>
-<blockquote>
-<p><em>&ldquo;application integration, system, system/network integration, performance testing and acceptance testing&rdquo;</em></p>
-</blockquote>
-<p>This gives candidates a reasonable picture of the testing domains involved. It signals this isn&rsquo;t a single-dimensional role focused only on UI automation — there&rsquo;s integration, performance, and acceptance testing in play.</p>
-<h3 id="2-post-release-responsibility-is-mentioned">2. Post-Release Responsibility is Mentioned</h3>
-<blockquote>
-<p><em>&ldquo;After the project is released to production, these teammates are also involved to [sic] providing support to our internal customer, the technical operation group as well as service management.&rdquo;</em></p>
-</blockquote>
-<p>Including post-release support responsibilities is honest and helpful. Many JDs stop at &ldquo;we ship quality software&rdquo; and fail to mention that the role involves production support. Candidates who dislike production support work can self-select out, which is a good outcome for both sides.</p>
-<h3 id="3-process-improvement-is-explicitly-part-of-the-role">3. Process Improvement is Explicitly Part of the Role</h3>
-<blockquote>
-<p><em>&ldquo;This role also plays a meaningful part of internal process audit and improvement to build efficiencies.&rdquo;</em></p>
-<p><em>&ldquo;Make recommendations for process improvements to immediate manager.&rdquo;</em></p>
-<p><em>&ldquo;Perform workflow analysis and recommends quality improvements.&rdquo;</em></p>
-</blockquote>
-<p>This signals that the role isn&rsquo;t purely execution — there&rsquo;s room (or expectation) for the person to improve how work gets done. This is a positive signal for candidates who want more than just running tests.</p>
-<h3 id="4-flexible-education-requirement">4. Flexible Education Requirement</h3>
-<blockquote>
-<p><em>&ldquo;Bachelor&rsquo;s degree or related experience (or above)&rdquo;</em></p>
-</blockquote>
-<p>The &ldquo;or related experience&rdquo; qualifier is inclusive and acknowledges that not all capable SDETs have formal CS degrees. This opens the door to career changers and self-taught engineers, which broadens the talent pool.</p>
-<h3 id="5-flexible-language-requirement">5. Flexible Language Requirement</h3>
-<blockquote>
-<p><em>&ldquo;proficient in one or two of coding languages i.e., Shell/Python/Perl/Robot and/or C/C#/Java/VB&rdquo;</em></p>
-</blockquote>
-<p>Requiring proficiency in &ldquo;one or two&rdquo; languages rather than demanding expertise in a specific stack is pragmatic. It recognises that good engineers can learn new languages and that the core skill is programming competence, not familiarity with a specific syntax.</p>
-<h3 id="6-company-context-is-provided">6. Company Context is Provided</h3>
-<p>The &ldquo;About LSEG&rdquo; section gives candidates a sense of the organisation&rsquo;s scale (25,000 people, 65 countries), purpose, and values. The emphasis on sustainability, diversity, and financial ecosystem transformation provides cultural context that helps candidates assess cultural fit.</p>
-<h3 id="7-equal-opportunities-statement-is-comprehensive">7. Equal Opportunities Statement is Comprehensive</h3>
-<p>The equal opportunities section is thorough, covering a wide range of protected characteristics and explicitly mentioning reasonable accommodations. This is both legally sound and signals an inclusive hiring culture.</p>
-<hr />
-<h2 id="weaknesses">Weaknesses</h2>
-<h3 id="1-title-vs-description-mismatch-the-core-problem">1. Title vs. Description Mismatch — The Core Problem</h3>
-<p>This is the most significant issue. The title says <strong>&ldquo;Associate Lead&rdquo;</strong> but the description contradicts this at every turn:</p>
-<table>
-<thead>
-<tr>
-<th>Title Implies</th>
-<th>Description Actually Says</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Leading others</td>
-<td><em>&ldquo;Some roles are responsible for </em><em>limited</em><em> co-ordination of the work of others&rdquo;</em></td>
-</tr>
-<tr>
-<td>Strategic influence</td>
-<td><em>&ldquo;Decisions taken are made </em><em>within guidelines</em><em>&ldquo;</em></td>
-</tr>
-<tr>
-<td>Autonomy</td>
-<td><em>&ldquo;Work under </em><em>general supervision</em><em>&ldquo;</em></td>
-</tr>
-<tr>
-<td>Driving direction</td>
-<td><em>&ldquo;Make recommendations for process improvements </em><em>to immediate manager</em><em>&ldquo;</em></td>
-</tr>
-<tr>
-<td>Ownership of outcomes</td>
-<td><em>&ldquo;Implement </em><em>pre-determined</em><em> improvements to current procedures&rdquo;</em></td>
-</tr>
-</tbody>
-</table>
-<p>The scope described is that of a <strong>mid-level individual contributor</strong> — someone who works within defined parameters, reports to a manager, and implements what others decide. Calling this an &ldquo;Associate Lead&rdquo; role is misleading and will:</p>
-<ul>
-<li><strong>Attract the wrong candidates</strong> — people expecting genuine leadership responsibility.</li>
-<li><strong>Deter the right candidates</strong> — experienced ICs who&rsquo;d be a great fit may skip it because they don&rsquo;t consider themselves &ldquo;leads.&rdquo;</li>
-<li><strong>Create frustration</strong> — anyone hired expecting lead-level responsibility will quickly discover the actual scope is narrower.</li>
-</ul>
-<h3 id="2-sdet-title-qa-analyst-description">2. SDET Title, QA Analyst Description</h3>
-<p>The title says <strong>Software Development Engineer in Test</strong> — a role that, industry-wide, implies:</p>
-<ul>
-<li>Writing production-adjacent code and test infrastructure.</li>
-<li>Building internal testing tools and frameworks.</li>
-<li>Deep integration with the development process.</li>
-<li>Contributing to system architecture discussions.</li>
-<li>Designing testability into systems.</li>
-</ul>
-<p>What the JD actually describes:</p>
-<ul>
-<li><em>&ldquo;Writing test cases/scripts&rdquo;</em></li>
-<li><em>&ldquo;Test case automation and execution&rdquo;</em></li>
-<li><em>&ldquo;Develop scripts and test cases&rdquo;</em></li>
-<li><em>&ldquo;Document all problems and works to resolve them&rdquo;</em></li>
-<li><em>&ldquo;Report progress on problem resolution to management&rdquo;</em></li>
-</ul>
-<p>This reads like a <strong>QA Analyst or Test Engineer</strong> role, not an SDET role. A genuine SDET job description would mention building test frameworks, contributing to CI/CD infrastructure, creating test utilities consumed by development teams, or writing code that improves system testability. None of this appears here.</p>
-<h3 id="3-outdated-technology-references">3. Outdated Technology References</h3>
-<p>Several technology requirements feel dated for a 2026 job posting:</p>
-<ul>
-<li><strong>CMM/CMMI</strong> — The Capability Maturity Model was developed in the late 1980s and peaked in relevance during the early 2000s. Most modern software organisations have moved to Agile-based maturity frameworks, DevOps metrics (DORA), or continuous improvement models. Requiring CMM/CMMI knowledge in 2026 suggests either (a) LSEG still operates under this framework, which is unusual, or (b) the JD template hasn&rsquo;t been updated.</li>
-<li><strong>VB (Visual Basic)</strong> — Listed as an acceptable programming language. VB is rarely used in modern test automation. Its inclusion suggests legacy systems or a copy-pasted JD.</li>
-<li><strong>Perl</strong> — While Perl still exists in legacy infrastructure scripts, it is uncommon in modern SDET toolchains. Its inclusion reinforces the impression of a dated technology environment.</li>
-<li><strong>HP ALM-era thinking</strong> — The overall framing of &ldquo;write test cases, execute them, report defects, report to management&rdquo; reflects a waterfall-adjacent mindset more aligned with tools like HP ALM/Quality Center than modern SDET practices.</li>
-</ul>
-<h3 id="4-no-modern-testing-practices-mentioned">4. No Modern Testing Practices Mentioned</h3>
-<p>The JD makes zero mention of:</p>
-<ul>
-<li><strong>CI/CD integration</strong> — No mention of Jenkins, GitLab CI, GitHub Actions, or any pipeline tooling.</li>
-<li><strong>Containerised testing</strong> — No Docker, Kubernetes, or container-based test environments.</li>
-<li><strong>Infrastructure as Code</strong> — No Terraform, Ansible, or similar.</li>
-<li><strong>API testing / contract testing</strong> — No mention of REST, GraphQL, Pact, or API-first testing.</li>
-<li><strong>Shift-left testing</strong> — No mention of shifting testing earlier in the development lifecycle.</li>
-<li><strong>Test observability</strong> — No mention of logging, monitoring, or observability in testing.</li>
-<li><strong>AI/ML in testing</strong> — No reference to AI-assisted test generation, intelligent test selection, or GenAI tooling.</li>
-<li><strong>Service virtualisation / mocking</strong> — Not mentioned.</li>
-<li><strong>Chaos engineering / resilience testing</strong> — Not mentioned.</li>
-</ul>
-<p>For a global financial infrastructure company in 2026, this absence is striking. It either means these practices aren&rsquo;t used (concerning) or the JD fails to represent the actual work (also concerning).</p>
-<h3 id="5-grammatical-and-language-errors">5. Grammatical and Language Errors</h3>
-<p>For a JD that requires <em>&ldquo;Excellent English language skill&rdquo;</em>, the document itself contains several errors:</p>
-<ul>
-<li><em>&ldquo;involved </em><em>to</em><em> providing support&rdquo;</em> — should be &ldquo;involved <strong>in</strong> providing support.&rdquo;</li>
-<li><em>&ldquo;good knowledge </em><em>on</em><em> process such as CMM/CMMI&rdquo;</em> — should be &ldquo;good knowledge <strong>of</strong> processes.&rdquo;</li>
-<li><em>&ldquo;Some experience </em><em>on</em><em> Networking&rdquo;</em> — should be &ldquo;Some experience <strong>in/with</strong> Networking.&rdquo;</li>
-<li><em>&ldquo;Excellent English language </em><em>skill</em><em>&ldquo;</em> — should be &ldquo;<strong>skills</strong>&rdquo; (plural).</li>
-<li><em>&ldquo;be an active teammate</em><em>!</em><em>&ldquo;</em> — the exclamation mark is unprofessional in a formal requirements list.</li>
-<li><em>&ldquo;Document all problems and </em><em>works</em><em> to resolve them&rdquo;</em> — should be &ldquo;<strong>work</strong>.&rdquo;</li>
-<li><em>&ldquo;recommends quality improvements&rdquo;</em> — inconsistent tense; should be &ldquo;recommend.&rdquo;</li>
-</ul>
-<p>These errors undermine credibility and suggest the JD was not carefully reviewed or has been copied from an older template without editing.</p>
-<h3 id="6-critical-missing-information">6. Critical Missing Information</h3>
-<p>The JD omits several things that modern candidates expect and need:</p>
-<table>
-<thead>
-<tr>
-<th>Missing Element</th>
-<th>Why It Matters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Salary range / compensation band</strong></td>
-<td>Candidates waste time applying for roles that don&rsquo;t meet their financial expectations. Many jurisdictions now require salary transparency.</td>
-</tr>
-<tr>
-<td><strong>Location / remote policy</strong></td>
-<td>Is this in Colombo? London? Hybrid? Fully remote? Completely absent.</td>
-</tr>
-<tr>
-<td><strong>Team size and structure</strong></td>
-<td><em>&ldquo;Typically work in a single QA team&rdquo;</em> — how big? Who else is on the team? Who does the role report to?</td>
-</tr>
-<tr>
-<td><strong>Current tech stack</strong></td>
-<td>What languages and frameworks does the team actually use today? Candidates cannot assess fit.</td>
-</tr>
-<tr>
-<td><strong>Specific products or systems</strong></td>
-<td>LSEG has many products (Refinitiv, FTSE Russell, trading platforms, data services). Which area is this role for?</td>
-</tr>
-<tr>
-<td><strong>Growth path / career progression</strong></td>
-<td>No mention of where this role leads — Senior SDET? Lead? Engineering Manager?</td>
-</tr>
-<tr>
-<td><strong>Interview process</strong></td>
-<td>No indication of what to expect (coding test, system design, behavioural rounds).</td>
-</tr>
-<tr>
-<td><strong>Start date or urgency</strong></td>
-<td>No timeline mentioned.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="7-incoherent-nice-to-have-grouping">7. Incoherent &ldquo;Nice-to-Have&rdquo; Grouping</h3>
-<blockquote>
-<p><em>&ldquo;Some experience on Networking, TCP/IP, financial markets, or project management is a nice to have.&rdquo;</em></p>
-</blockquote>
-<p>This sentence lumps together four completely unrelated skill domains as if they are interchangeable:</p>
-<ul>
-<li><strong>Networking / TCP/IP</strong> — deep technical infrastructure knowledge.</li>
-<li><strong>Financial markets</strong> — domain/business knowledge.</li>
-<li><strong>Project management</strong> — a process/management skill.</li>
-</ul>
-<p>These require entirely different backgrounds and serve different purposes in the role. Grouping them together suggests the JD author didn&rsquo;t think carefully about what the role actually needs. Each should be a separate line item with context about why it&rsquo;s valuable.</p>
-<h3 id="8-demotivating-language-choices">8. Demotivating Language Choices</h3>
-<p>Several phrases in the JD are subtly discouraging:</p>
-<ul>
-<li><em>&ldquo;meet </em><em>minimum</em><em> company standards&rdquo;</em> — The word &ldquo;minimum&rdquo; sets a low bar. It signals &ldquo;just don&rsquo;t break things&rdquo; rather than &ldquo;strive for excellence.&rdquo; This is especially ironic given that LSEG lists &ldquo;Excellence&rdquo; as a core value.</li>
-<li><em>&ldquo;Work under general supervision&rdquo;</em> — Combined with the &ldquo;Associate Lead&rdquo; title, this feels contradictory and deflating.</li>
-<li><em>&ldquo;</em><em>limited</em><em> co-ordination of the work of others&rdquo;</em> — The word &ldquo;limited&rdquo; downplays the leadership aspect. Even if accurate, it could be framed more positively.</li>
-<li><em>&ldquo;Implement </em><em>pre-determined</em><em> improvements&rdquo;</em> — Implies the person won&rsquo;t have creative input into what gets improved, only execution of someone else&rsquo;s decisions.</li>
-<li><em>&ldquo;Typically requires a </em><em>general</em><em> understanding&rdquo;</em> — &ldquo;General understanding&rdquo; is vague and sounds like a low expectation.</li>
-</ul>
-<p>A candidate reading this would reasonably conclude: <em>&ldquo;This is a role where I follow instructions, don&rsquo;t make decisions, and aim for minimum standards.&rdquo;</em> That&rsquo;s unlikely to attract top SDET talent.</p>
-<h3 id="9-benefits-section-is-essentially-empty">9. Benefits Section is Essentially Empty</h3>
-<blockquote>
-<p><em>&ldquo;LSEG offers a range of tailored benefits and support, including healthcare, retirement planning, paid volunteering days and wellbeing initiatives.&rdquo;</em></p>
-</blockquote>
-<p>This single sentence is almost content-free. &ldquo;A range of tailored benefits&rdquo; tells candidates nothing. Competitors who list specific benefits (equity, bonus structure, learning budgets, specific healthcare coverage, flexible working arrangements) will appear more attractive. In a competitive market for SDET talent, this vagueness is a disadvantage.</p>
-<h3 id="10-no-mention-of-what-makes-this-role-compelling">10. No Mention of What Makes This Role Compelling</h3>
-<p>The JD fails to answer the fundamental question every candidate asks: <strong>&ldquo;Why should I work here instead of somewhere else?&rdquo;</strong></p>
-<p>There is no mention of:</p>
-<ul>
-<li>Interesting technical challenges specific to financial markets infrastructure.</li>
-<li>Scale of systems (billions of transactions? petabytes of data?).</li>
-<li>Impact the role has on global financial markets.</li>
-<li>Learning opportunities or professional development budget.</li>
-<li>The team&rsquo;s engineering culture or practices.</li>
-<li>Recent or upcoming modernisation efforts the candidate would contribute to.</li>
-<li>Autonomy, innovation opportunities, or hackathons.</li>
-</ul>
-<p>The &ldquo;About LSEG&rdquo; section speaks in corporate generalities about sustainability and values. While important, it doesn&rsquo;t differentiate the day-to-day engineering experience from any other large corporation.</p>
-<h3 id="11-the-scope-and-impact-section-is-internally-contradictory">11. The &ldquo;Scope and Impact&rdquo; Section is Internally Contradictory</h3>
-<p>The section tries to describe both autonomy and constraint, producing a confused message:</p>
-<ul>
-<li><em>&ldquo;Work independently within defined parameters&rdquo;</em> — independent but constrained.</li>
-<li><em>&ldquo;taking ownership of problems within own area of knowledge&rdquo;</em> — ownership but only in your lane.</li>
-<li><em>&ldquo;Decisions taken are made within guidelines&rdquo;</em> — you make decisions, but not really.</li>
-<li><em>&ldquo;Some roles are responsible for limited co-ordination&rdquo;</em> — this may or may not apply to you.</li>
-</ul>
-<p>The hedged, conditional language throughout (<em>&ldquo;typically,&rdquo; &ldquo;some roles,&rdquo; &ldquo;limited,&rdquo; &ldquo;within defined parameters&rdquo;</em>) makes it impossible to understand what the actual day-to-day experience is. A candidate cannot assess whether this is a role with genuine autonomy or a tightly supervised position.</p>
-<h3 id="12-experience-range-is-contradictory">12. Experience Range is Contradictory</h3>
-<p>The requirements state:</p>
-<ul>
-<li><em>&ldquo;Minimum of 3 years testing or other development experience&rdquo;</em></li>
-<li><em>&ldquo;at least 2 years of experience in automation, 2-5 years programming experience&rdquo;</em></li>
-</ul>
-<p>But the &ldquo;Associate Lead&rdquo; title typically implies <strong>5-8+ years</strong> of experience in the industry. Someone with exactly 3 years of testing experience and 2 years of automation would be a mid-level engineer, not an &ldquo;Associate Lead.&rdquo; This mismatch will confuse candidates about the actual seniority level expected.</p>
-<hr />
-<h2 id="structural-and-formatting-observations">Structural and Formatting Observations</h2>
-<h3 id="positives">Positives</h3>
-<ul>
-<li>The document has clear section headers.</li>
-<li>Requirements are in a bulleted list format, making them scannable.</li>
-<li>The About, Benefits, and Equal Opportunities sections provide organisational context.</li>
-</ul>
-<h3 id="areas-for-improvement">Areas for Improvement</h3>
-<ul>
-<li><strong>No visual hierarchy within requirements</strong> — mandatory vs. nice-to-have skills are not clearly separated. Only the last bullet hints at &ldquo;nice to have.&rdquo; Everything else reads as mandatory, making the requirements appear overwhelming.</li>
-<li><strong>Wall of text in the opening paragraph</strong> — The job description section is a single dense paragraph. Breaking it into bullets or shorter paragraphs would improve readability.</li>
-<li><strong>The &ldquo;Scope and Impact&rdquo; section reads like an HR template</strong>, not a role description. It uses generic corporate language that could apply to almost any mid-level technical role.</li>
-<li><strong>No use of formatting emphasis</strong> (bold, italics) to highlight key aspects within sections.</li>
-</ul>
-<hr />
-<h2 id="comparison-to-industry-best-practices-for-sdet-jds">Comparison to Industry Best Practices for SDET JDs</h2>
-<table class="wide-table">
-<thead>
-<tr>
-<th>Best Practice</th>
-<th>This JD</th>
-<th>Assessment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Clear seniority expectation</td>
-<td>Title says Lead; description says IC</td>
-<td><strong>Fails</strong></td>
-</tr>
-<tr>
-<td>Specific tech stack the team uses</td>
-<td>Not mentioned</td>
-<td><strong>Fails</strong></td>
-</tr>
-<tr>
-<td>Distinction between required and preferred skills</td>
-<td>Barely separated</td>
-<td><strong>Weak</strong></td>
-</tr>
-<tr>
-<td>Salary transparency</td>
-<td>Absent</td>
-<td><strong>Fails</strong></td>
-</tr>
-<tr>
-<td>Location and work arrangement</td>
-<td>Absent</td>
-<td><strong>Fails</strong></td>
-</tr>
-<tr>
-<td>Day-in-the-life or project examples</td>
-<td>Absent</td>
-<td><strong>Fails</strong></td>
-</tr>
-<tr>
-<td>Growth and development opportunities</td>
-<td>Absent</td>
-<td><strong>Fails</strong></td>
-</tr>
-<tr>
-<td>Modern engineering practices mentioned</td>
-<td>Absent</td>
-<td><strong>Fails</strong></td>
-</tr>
-<tr>
-<td>Inclusive language</td>
-<td>Equal opportunities section is strong</td>
-<td><strong>Passes</strong></td>
-</tr>
-<tr>
-<td>Grammatically correct</td>
-<td>Multiple errors</td>
-<td><strong>Fails</strong></td>
-</tr>
-<tr>
-<td>Compelling employer value proposition</td>
-<td>Generic corporate language</td>
-<td><strong>Weak</strong></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="recommendations-for-improvement">Recommendations for Improvement</h2>
-<ol>
-<li>
-<p><strong>Resolve the title-scope mismatch.</strong> Either rename the role to &ldquo;SDET&rdquo; or &ldquo;Senior SDET&rdquo; to match the described scope, or rewrite the scope to genuinely reflect Associate Lead responsibilities (team leadership, strategic planning, hiring involvement, cross-team influence).</p>
-</li>
-<li>
-<p><strong>Rewrite as a genuine SDET description.</strong> Replace &ldquo;write test cases and report defects&rdquo; language with SDET-appropriate responsibilities: building test frameworks, designing test infrastructure, contributing to CI/CD pipelines, improving system testability.</p>
-</li>
-<li>
-<p><strong>Modernise the technology references.</strong> Remove or de-emphasise CMM/CMMI, VB, and Perl. Add modern tooling expectations (CI/CD platforms, containerisation, API testing frameworks, cloud-native testing approaches).</p>
-</li>
-<li>
-<p><strong>Fix all grammatical errors.</strong> Have a native English speaker review the JD, especially given the irony of requiring &ldquo;Excellent English language skill&rdquo; from candidates.</p>
-</li>
-<li>
-<p><strong>Add salary range.</strong> Even a broad band (e.g., LKR X–Y or a grade level) would help candidates self-select appropriately.</p>
-</li>
-<li>
-<p><strong>Specify location and work arrangement.</strong> State explicitly whether this is Colombo-based, London-based, hybrid, or remote.</p>
-</li>
-<li>
-<p><strong>Describe the actual team and tech stack.</strong> Mention the team size, what tools and languages are currently in use, and what systems the SDET will be testing.</p>
-</li>
-<li>
-<p><strong>Separate requirements clearly.</strong> Use explicit &ldquo;Required&rdquo; and &ldquo;Preferred&rdquo; sections rather than burying nice-to-haves in the last bullet point.</p>
-</li>
-<li>
-<p><strong>Add a compelling pitch.</strong> Include 2-3 sentences about why this specific role is interesting — the scale of systems, the impact on financial markets, the engineering challenges, or the modernisation journey.</p>
-</li>
-<li>
-<p><strong>Remove demotivating language.</strong> Replace &ldquo;minimum standards&rdquo; with &ldquo;high-quality standards.&rdquo; Replace &ldquo;limited co-ordination&rdquo; with &ldquo;opportunity to coordinate.&rdquo; Replace &ldquo;pre-determined improvements&rdquo; with &ldquo;identify and drive improvements.&rdquo;</p>
-</li>
-<li>
-<p><strong>Add career progression context.</strong> A single line like <em>&ldquo;This role can lead to Senior SDET, Lead SDET, or Engineering Management positions&rdquo;</em> gives candidates a reason to invest in the role long-term.</p>
-</li>
-<li>
-<p><strong>Align experience requirements with the title.</strong> If this is truly an Associate Lead role, the minimum experience should be 5+ years. If 3 years is genuinely the minimum, the title should not include &ldquo;Lead.&rdquo;</p>
-</li>
-</ol>
-<hr />
-<h2 id="overall-assessment">Overall Assessment</h2>
-<p><strong>This JD reads like a legacy QA job description with a modern title bolted on.</strong> The fundamental disconnect between the &ldquo;Associate Lead, SDET&rdquo; title and the mid-level, supervised, template-driven QA work described in the body will confuse candidates, attract the wrong applicants, and deter strong ones. The outdated technology references, grammatical errors, and missing critical information (salary, location, team, tech stack) further weaken it.</p>
-<p>LSEG is a prestigious global employer, and the underlying role likely involves interesting work at meaningful scale. But this JD fails to communicate that. A thoughtful rewrite — aligning the title with scope, modernising the language, and adding specifics about the actual work — would significantly improve the quality of applicants.</p>
-<p><strong>JD Quality Rating: 4/10</strong></p>
-<p>The structural basics are present (sections, bullets, company info), but the content fails on clarity, accuracy, modernity, transparency, and appeal. For a global financial infrastructure leader competing for SDET talent in 2026, this falls well short of the standard needed to attract top candidates.</p>
-</section>
-
-<section class="chapter" id="ch-3">
-    <h1>Curriculum Vitae</h1>
-    
-<p><strong>Senior QA Engineer</strong></p>
-<p>Phone: +94 769046054 | Email: udanishashi@gmail.com | LinkedIn: <a href="https://linkedin.com/in/udani-weerasinghe/">/in/udani-weerasinghe/</a> | Location: Sri Lanka</p>
-<hr />
-<h2 id="profile-summary">Profile Summary</h2>
-<p>Quality Engineering professional with over four years of experience leading QA strategy for complex, cloud-integrated enterprise systems. Owns end-to-end quality outcomes across Salesforce, SAP, and e-commerce platforms, aligning automation architecture, CI/CD quality gates, and risk-based testing with business delivery goals. Experienced in mentoring QA engineers, influencing cross-functional teams, and embedding shift-left practices within Agile environments. ISTQB Advanced Level certified with a strong foundation in Java-based test automation, API-first testing, and cloud-native systems. MSc in Cloud Native Computing; MBA.</p>
-<hr />
-<h2 id="core-skills">Core Skills</h2>
-<ul>
-<li><strong>Test Automation:</strong> Selenium, Playwright, Appium, TestNG, JUnit, Cucumber, Pytest, REST Assured, Maven</li>
-<li><strong>Programming:</strong> Java, Python, JavaScript, SQL, Bash</li>
-<li><strong>CI/CD &amp; DevOps:</strong> Jenkins, Git, GitLab, Bitbucket, Azure DevOps, SonarQube, BrowserStack</li>
-<li><strong>Platforms:</strong> AWS, Azure, SAP, Salesforce, PostgreSQL, Oracle</li>
-<li><strong>QA Management:</strong> JIRA, QMetry, Confluence, HP ALM, Postman</li>
-<li><strong>Methodologies:</strong> Agile/Scrum, TDD, BDD, Shift-left Testing, Risk-based Testing, Performance Testing</li>
-</ul>
-<hr />
-<h2 id="professional-experience">Professional Experience</h2>
-<h3 id="senior-software-quality-engineer-sysco-labs-sri-lanka-client-brakes-uk">Senior Software Quality Engineer | Sysco LABS Sri Lanka | Client: Brakes, UK</h3>
-<p><em>August 2021 – October 2023</em></p>
-<p><strong>Projects:</strong> Salesforce Service Cloud | Salesforce Cloud Extension | Vendor Invoice Management</p>
-<ul>
-<li>Designed automated test suites using Selenium, TestNG, and REST Assured, reducing regression cycles by 45%.</li>
-<li>Automated complex test scenarios across SAP, E-Commerce, and Salesforce platforms; Maintained Java-based automation suites in compliance with SonarQube code quality standards.</li>
-<li>Integrated test suites into CI/CD pipelines (Jenkins, Git, AWS) enabling continuous quality validation.</li>
-<li>Championed shift-left testing practices to improve early defect detection and strengthen developer collaboration.</li>
-<li>Led functional, regression, and UAT phases across multiple development teams, ensuring high-quality releases.</li>
-<li>Created comprehensive test plans, estimations, and summary reports; collaborated with product owners to define acceptance criteria and risk-based testing strategies.</li>
-<li>Set up and maintained test environments and test data to support effective test execution.</li>
-<li>Mentored junior testers and conducted code reviews to improve automation stability and maintainability.</li>
-<li>Delivered workshops on test automation, testing methodologies, and SAP-Salesforce integrations to stakeholders and team members.</li>
-<li>Collaborated with product owners, developers, and global QA teams to translate business requirements into test automation strategies.</li>
-<li>Participated in Agile ceremonies, contributing to requirement analysis, sprint planning, and cross-team troubleshooting.</li>
-</ul>
-<h3 id="software-quality-engineer-sysco-labs-sri-lanka-client-brakes-uk">Software Quality Engineer | Sysco LABS Sri Lanka | Client: Brakes, UK</h3>
-<p><em>March 2020 – July 2021</em></p>
-<p><strong>Project:</strong> Hybris E-Commerce</p>
-<ul>
-<li>Reduced regression execution time from 5 days to 2 days by automating 95% of the regression suite (200+ test cases).</li>
-<li>Designed and implemented robust end-to-end test automation frameworks for multiple browsers and mobile applications.</li>
-<li>Improved test execution speed by 50% through parallel and headless test execution optimizations.</li>
-<li>Achieved 98% test coverage with 150+ automated test cases, identifying 20 critical defects prior to production release.</li>
-<li>Conducted security testing using Veracode, ensuring compliance with security standards.</li>
-</ul>
-<hr />
-<h2 id="other-experience">Other Experience</h2>
-<h3 id="global-student-experience-assistant-technological-university-of-shannon-midlands">Global Student Experience Assistant | Technological University of Shannon: Midlands</h3>
-<p><em>June 2024 – December 2025</em></p>
-<ul>
-<li>Supported international student engagement initiatives, coordinating events and providing cross-cultural support.</li>
-<li>Assisted the Erasmus Team with promotional activities and documentation management for participating students.</li>
-</ul>
-<h3 id="teaching-assistant-part-time-open-university-sri-lanka">Teaching Assistant (Part Time) | Open University Sri Lanka</h3>
-<p><em>August 2021 – June 2022</em></p>
-<ul>
-<li>Delivered lectures and tutorials for first-year Software Engineering students.</li>
-<li>Designed, administered, and graded continuous assessments to support student learning outcomes.</li>
-</ul>
-<h3 id="application-support-engineer-intern-ebuilder-sri-lanka-client-dhl">Application Support Engineer Intern | eBuilder Sri Lanka | Client: DHL</h3>
-<p><em>September 2018 – February 2019</em></p>
-<ul>
-<li>Performed daily health checks and managed first- and second-line customer support within SLAs.</li>
-<li>Monitored applications, investigated backend issues, uploaded master data, and generated reports.</li>
-<li>Documented project domain knowledge including process flows and architecture diagrams in Confluence.</li>
-</ul>
-<hr />
-<h2 id="professional-qualifications">Professional Qualifications</h2>
-<ul>
-<li><strong>ISTQB Certified Tester Advanced Level - Technical Test Analyst (CTAL-TTA)</strong> — International Software Testing Qualifications Board | <em>April 2025</em></li>
-<li><strong>ISTQB Certified Tester Foundation Level (CTFL)</strong> — International Software Testing Qualifications Board | <em>October 2020</em></li>
-<li><strong>Chartered Accountancy - Business Level Completed</strong> — Institute of Chartered Accountants of Sri Lanka (CA Sri Lanka) | <em>January 2015 - June 2019</em></li>
-</ul>
-<hr />
-<h2 id="educational-qualifications">Educational Qualifications</h2>
-<ul>
-<li><strong>Master of Science in Software Design with Cloud Native Computing</strong> (First class honours) — Technological University of Shannon: Midlands Midwest (TUS), Ireland | <em>October 2023 – October 2024</em></li>
-<li><strong>Master of Business Administration</strong> — University of Bedfordshire, United Kingdom | <em>March 2021 – April 2022</em></li>
-<li><strong>Bachelor of Science (Hons) in Information Systems</strong> (Second class upper division) — University of Colombo, Sri Lanka | <em>February 2016 – February 2020</em></li>
-</ul>
-<hr />
-<h2 id="publications">Publications</h2>
-<p><strong>U. Weerasinghe</strong> et al., &ldquo;The Use of Conversational Interfaces in Long Term Patient Care,&rdquo; <em>20th Conference on Advances in ICT for Emerging Regions (ICTer)</em>, 2020. <strong>Excellent Paper Award</strong> — <a href="https://doi.org/10.1109/ICTer51097.2020.9325473">DOI: 10.1109/ICTer51097.2020.9325473</a></p>
-<hr />
-<h2 id="awards-and-involvements">Awards and Involvements</h2>
-<ul>
-<li><strong>TUS Global Ambassador</strong> | Technological University of Shannon: Midlands Midwest 2023/2024</li>
-<li><strong>Promotional Officer</strong> | TUS Women in Engineering Committee 2023/24</li>
-<li><strong>Deputy Tribe Chief</strong> | Sysco LABS Sri Lanka 2021</li>
-<li><strong>Customer First Value Award</strong> | Sysco LABS Sri Lanka 2020</li>
-</ul>
-<hr />
-<h2 id="interests">Interests</h2>
-<ul>
-<li>Gen AI driven QA and test automation</li>
-<li>Building and mentoring high performance QA teams</li>
-</ul>
-</section>
-
-<section class="chapter" id="ch-4">
-    <h1>CV Gap Analysis</h1>
-    
-<p><strong>Target Role:</strong> Associate Lead, Software Development Engineer in Test (SDET) — LSEG
-<strong>Date of Review:</strong> 2026-03-15</p>
-<hr />
-<h2 id="executive-summary">Executive Summary</h2>
-<p>This CV presents a QA professional with a solid technical foundation, strong academic credentials, and measurable achievements in test automation. However, when evaluated against the LSEG Associate Lead SDET role specifically, several gaps emerge — particularly around financial domain experience, infrastructure-level skills, and the breadth of employment history. Below is a detailed breakdown.</p>
-<hr />
-<h2 id="strengths">Strengths</h2>
-<h3 id="1-quantified-achievements-the-standout-quality">1. Quantified Achievements — The Standout Quality</h3>
-<p>The CV&rsquo;s biggest strength is its consistent use of concrete metrics. This is something many QA CVs fail at, and this one does it well:</p>
-<ul>
-<li><em>&ldquo;Reducing regression cycles by 45%&rdquo;</em></li>
-<li><em>&ldquo;Reduced regression execution time from 5 days to 2 days&rdquo;</em></li>
-<li><em>&ldquo;Automating 95% of the regression suite (200+ test cases)&rdquo;</em></li>
-<li><em>&ldquo;Improved test execution speed by 50%&rdquo;</em></li>
-<li><em>&ldquo;98% test coverage with 150+ automated test cases, identifying 20 critical defects prior to production release&rdquo;</em></li>
-</ul>
-<p>These numbers give hiring managers something tangible to evaluate and demonstrate a results-oriented mindset. This is one of the most effective aspects of the CV.</p>
-<h3 id="2-strong-and-diverse-academic-credentials">2. Strong and Diverse Academic Credentials</h3>
-<p>The candidate holds three degrees, each adding a distinct dimension:</p>
-<ul>
-<li><strong>MSc in Cloud Native Computing (First Class Honours)</strong> — Directly relevant to modern SDET work involving cloud-native systems, microservices, and containerised testing.</li>
-<li><strong>MBA</strong> — Adds business acumen and strategic thinking, valuable for a lead-level role that requires aligning QA with business goals.</li>
-<li><strong>BSc (Hons) in Information Systems (Second Upper)</strong> — Provides the technical foundation.</li>
-</ul>
-<p>The combination of a technical MSc and an MBA is uncommon and positions the candidate well for roles that bridge technical execution and business stakeholder engagement.</p>
-<h3 id="3-relevant-and-current-certifications">3. Relevant and Current Certifications</h3>
-<ul>
-<li><strong>ISTQB CTAL-TTA (April 2025)</strong> — The Advanced Level Technical Test Analyst certification is a strong credential that signals depth in test design, white-box techniques, and analytical testing. Importantly, it is recent.</li>
-<li><strong>ISTQB CTFL (October 2020)</strong> — Foundation-level certification obtained early in career, showing proactive professional development.</li>
-</ul>
-<p>Both certifications directly align with the LSEG role&rsquo;s expectation of <em>&ldquo;shown expertise with software testing methodologies and tools.&rdquo;</em></p>
-<h3 id="4-broad-technology-stack-coverage">4. Broad Technology Stack Coverage</h3>
-<p>The skills section covers a wide range of relevant technologies:</p>
-<ul>
-<li><strong>Automation frameworks:</strong> Selenium, Playwright, Appium, REST Assured — covering web, mobile, and API testing.</li>
-<li><strong>Programming:</strong> Java, Python, JavaScript, SQL, Bash — multiple languages showing versatility.</li>
-<li><strong>CI/CD:</strong> Jenkins, Git, GitLab, Azure DevOps — demonstrates DevOps integration capability.</li>
-<li><strong>Cloud:</strong> AWS, Azure — aligns with LSEG&rsquo;s requirement for cloud technology familiarity.</li>
-<li><strong>BDD/TDD:</strong> Cucumber, TestNG, JUnit, Pytest — multiple test framework experience.</li>
-</ul>
-<h3 id="5-demonstrated-shift-left-and-strategic-qa-thinking">5. Demonstrated Shift-Left and Strategic QA Thinking</h3>
-<p>The CV goes beyond &ldquo;I ran tests&rdquo; and shows strategic QA involvement:</p>
-<ul>
-<li><em>&ldquo;Championed shift-left testing practices&rdquo;</em></li>
-<li><em>&ldquo;Collaborated with product owners to define acceptance criteria and risk-based testing strategies&rdquo;</em></li>
-<li><em>&ldquo;Created comprehensive test plans, estimations, and summary reports&rdquo;</em></li>
-<li><em>&ldquo;Participated in Agile ceremonies, contributing to requirement analysis, sprint planning&rdquo;</em></li>
-</ul>
-<p>This aligns well with the LSEG JD&rsquo;s emphasis on requirements analysis and test planning.</p>
-<h3 id="6-leadership-and-mentoring-experience">6. Leadership and Mentoring Experience</h3>
-<p>For an &ldquo;Associate Lead&rdquo; position, evidence of leadership is important:</p>
-<ul>
-<li><em>&ldquo;Mentored junior testers and conducted code reviews&rdquo;</em></li>
-<li><em>&ldquo;Delivered workshops on test automation, testing methodologies, and SAP-Salesforce integrations&rdquo;</em></li>
-<li><em>&ldquo;Led functional, regression, and UAT phases across multiple development teams&rdquo;</em></li>
-<li>Teaching Assistant role at Open University demonstrates instructional capability.</li>
-<li>&ldquo;Deputy Tribe Chief&rdquo; at Sysco LABS suggests some organisational leadership.</li>
-</ul>
-<h3 id="7-published-research-with-award-recognition">7. Published Research with Award Recognition</h3>
-<p>The published paper on conversational interfaces in healthcare (<em>ICTer 2020</em>) with an <strong>Excellent Paper Award</strong> demonstrates research rigour and intellectual curiosity. While not directly related to SDET work, it signals the candidate&rsquo;s ability to investigate problems systematically and communicate findings — traits valued in senior testing roles.</p>
-<h3 id="8-cross-platform-testing-experience">8. Cross-Platform Testing Experience</h3>
-<p>Testing across SAP, Salesforce, and Hybris E-Commerce platforms shows adaptability to complex, integrated enterprise environments. This is relevant to LSEG, which operates large-scale interconnected systems.</p>
-<h3 id="9-well-structured-profile-summary">9. Well-Structured Profile Summary</h3>
-<p>The opening paragraph is dense with relevant keywords and gives a rapid overview of the candidate&rsquo;s value proposition. It effectively communicates seniority level, domain breadth, and strategic QA orientation in a single paragraph.</p>
-<hr />
-<h2 id="weaknesses">Weaknesses</h2>
-<h3 id="1-significant-employment-gap-and-career-continuity-concerns">1. Significant Employment Gap and Career Continuity Concerns</h3>
-<p>This is the most critical issue on the CV:</p>
-<ul>
-<li><strong>Core QA experience ended in October 2023</strong> — that is approximately 2.5 years ago.</li>
-<li>From <strong>June 2024 to December 2025</strong>, the candidate held a non-technical role (Global Student Experience Assistant), which involves event coordination and student support — not QA work.</li>
-<li>From <strong>December 2025 to present (March 2026)</strong>, there is an unexplained ~3-month gap.</li>
-</ul>
-<p>For a fast-moving field like test automation, 2.5 years away from active QA work is a significant concern. Technologies, frameworks, and best practices evolve rapidly. The candidate should proactively address this — e.g., by highlighting any personal projects, open-source contributions, or continued learning during this period.</p>
-<h3 id="2-inflated-experience-claim">2. Inflated Experience Claim</h3>
-<p>The profile states <em>&ldquo;over four years of experience.&rdquo;</em> However, examining the actual QA roles:</p>
-<ul>
-<li><strong>Software Quality Engineer:</strong> March 2020 – July 2021 (~1 year 4 months)</li>
-<li><strong>Senior Software Quality Engineer:</strong> August 2021 – October 2023 (~2 years 2 months)</li>
-</ul>
-<p>This totals approximately <strong>3 years and 6 months</strong> of QA experience, all at the same company (Sysco LABS). The 6-month internship at eBuilder was in application support, not QA. The claim of &ldquo;over four years&rdquo; may be questioned by a diligent recruiter and could undermine credibility.</p>
-<h3 id="3-single-employer-qa-experience">3. Single-Employer QA Experience</h3>
-<p>All QA experience comes from one company (Sysco LABS) working for one client (Brakes, UK). While the projects varied (Salesforce, SAP, E-Commerce), the context was a single outsourced engagement. This limits evidence of:</p>
-<ul>
-<li>Adapting to different organisational cultures and processes.</li>
-<li>Working with different codebases, architectures, and tech stacks.</li>
-<li>Navigating different team structures and development methodologies.</li>
-</ul>
-<p>A hiring manager at LSEG, which is a global financial infrastructure company, may question whether this experience translates to their environment.</p>
-<h3 id="4-no-financial-domain-experience">4. No Financial Domain Experience</h3>
-<p>The LSEG job description explicitly mentions <em>&ldquo;some experience on financial markets&rdquo;</em> as desirable. The CV shows:</p>
-<ul>
-<li><strong>Zero</strong> mention of financial systems, trading platforms, market data, or financial regulations.</li>
-<li>The Chartered Accountancy (Business Level) qualification is listed but not connected to any practical financial domain application.</li>
-<li>No mention of FIX protocol, financial messaging standards, regulatory compliance testing, or similar domain-specific skills.</li>
-</ul>
-<p>Given LSEG&rsquo;s core business is financial markets infrastructure, this is a notable gap. The candidate should at minimum acknowledge the CA qualification&rsquo;s relevance to understanding financial systems and express domain interest.</p>
-<h3 id="5-missing-infrastructure-and-systems-skills">5. Missing Infrastructure and Systems Skills</h3>
-<p>The LSEG JD requires:</p>
-<ul>
-<li><em>&ldquo;Proficiency in Windows server and/or Unix/Linux&rdquo;</em> — <strong>Not mentioned at all</strong> on the CV. Bash is listed under programming but server administration/proficiency is absent.</li>
-<li><em>&ldquo;Some experience on Networking, TCP/IP&rdquo;</em> — <strong>Not mentioned.</strong> For an SDET role at a financial exchange, network-level testing knowledge is important.</li>
-<li>No mention of <strong>containerisation</strong> (Docker, Kubernetes) despite having an MSc in Cloud Native Computing — a surprising omission.</li>
-<li>No mention of <strong>monitoring/observability tools</strong> (Grafana, Splunk, ELK stack) which are common in SDET roles.</li>
-</ul>
-<h3 id="6-performance-testing-mentioned-but-unsubstantiated">6. Performance Testing — Mentioned but Unsubstantiated</h3>
-<p>&ldquo;Performance Testing&rdquo; is listed under Methodologies, but:</p>
-<ul>
-<li>No specific performance testing tools are mentioned (JMeter, Gatling, k6, Locust).</li>
-<li>No performance testing achievements or metrics appear in the experience section.</li>
-<li>No mention of load testing, stress testing, endurance testing, or capacity planning.</li>
-</ul>
-<p>For a financial markets SDET role where system performance is critical (think: trading latency, market data throughput), this gap is concerning. Either the candidate has this experience and it is not shown, or the skill is aspirational — both are problematic.</p>
-<h3 id="7-missing-cmmcmmi-and-formal-sdlc-knowledge">7. Missing CMM/CMMI and Formal SDLC Knowledge</h3>
-<p>The JD states: <em>&ldquo;Experience of formal software development lifecycle and good knowledge on process such as CMM/CMMI.&rdquo;</em> LSEG, as a regulated financial entity, likely operates under formal process maturity models. The CV mentions Agile/Scrum but makes no reference to:</p>
-<ul>
-<li>CMM/CMMI frameworks.</li>
-<li>ISO standards (e.g., ISO 25010 for software quality).</li>
-<li>Formal audit or compliance processes for software quality.</li>
-</ul>
-<h3 id="8-security-testing-barely-addressed">8. Security Testing — Barely Addressed</h3>
-<p>One line mentions Veracode: <em>&ldquo;Conducted security testing using Veracode.&rdquo;</em> This is thin. For a financial markets company, security is paramount. The CV should expand on:</p>
-<ul>
-<li>Types of security testing performed (SAST, DAST, penetration testing).</li>
-<li>Security vulnerabilities found and how they were addressed.</li>
-<li>Any knowledge of OWASP, security compliance standards.</li>
-</ul>
-<h3 id="9-weak-other-experience-section-for-this-role">9. Weak &ldquo;Other Experience&rdquo; Section for This Role</h3>
-<p>The three non-QA roles listed occupy significant CV real estate:</p>
-<ul>
-<li><strong>Global Student Experience Assistant</strong> — event coordination, not technically relevant.</li>
-<li><strong>Teaching Assistant</strong> — tangentially relevant (communication/mentoring) but adds limited value for an SDET lead role.</li>
-<li><strong>Application Support Engineer Intern</strong> — the most relevant of the three, but from 2018-2019 and quite basic.</li>
-</ul>
-<p>For a candidate competing for an Associate Lead SDET role, this space could be better utilised by expanding on technical achievements, side projects, or open-source contributions.</p>
-<h3 id="10-no-evidence-of-database-or-data-centric-testing">10. No Evidence of Database or Data-Centric Testing</h3>
-<p>SQL is listed as a skill, but the CV contains no examples of:</p>
-<ul>
-<li>Database testing or data validation strategies.</li>
-<li>ETL testing or data pipeline verification.</li>
-<li>Specific work with PostgreSQL or Oracle (both listed in Platforms).</li>
-</ul>
-<p>In financial markets, data integrity testing is crucial, and this absence is a missed opportunity.</p>
-<h3 id="11-interests-section-is-underdeveloped">11. Interests Section is Underdeveloped</h3>
-<p>The interests section reads:</p>
-<blockquote>
-<ul>
-<li>Gen AI driven QA and test automation</li>
-<li>Building and mentoring high performance QA teams</li>
-</ul>
-</blockquote>
-<p>These are professional interests, not evidence. The candidate should either:
-- Remove this section entirely (it adds minimal value as stated), or
-- Convert these into concrete evidence — e.g., specific AI-driven testing tools explored, or examples of team-building outcomes.</p>
-<h3 id="12-missing-robot-framework-perl-and-cc">12. Missing Robot Framework, Perl, and C/C</h3>
-<p>The JD specifically mentions: <em>&ldquo;Shell/Python/Perl/Robot and/or C/C#/Java/VB.&rdquo;</em> The candidate covers Python, Java, and Shell/Bash, but:</p>
-<ul>
-<li><strong>Robot Framework</strong> — not mentioned (widely used in enterprise SDET roles).</li>
-<li><strong>Perl</strong> — not mentioned.</li>
-<li><strong>C/C#/VB</strong> — not mentioned.</li>
-</ul>
-<p>While not all languages are required, acknowledging awareness or willingness to learn could help.</p>
-<hr />
-<h2 id="structural-and-formatting-observations">Structural and Formatting Observations</h2>
-<h3 id="positives">Positives</h3>
-<ul>
-<li>Clean, well-organised layout with clear section headers.</li>
-<li>Reverse chronological order for experience — standard and effective.</li>
-<li>Good use of bullet points with action verbs (&ldquo;Designed,&rdquo; &ldquo;Integrated,&rdquo; &ldquo;Championed,&rdquo; &ldquo;Led&rdquo;).</li>
-<li>Certifications and education are prominently placed and easy to scan.</li>
-</ul>
-<h3 id="areas-for-improvement">Areas for Improvement</h3>
-<ul>
-<li><strong>CV length:</strong> The content, if rendered as a traditional CV, may approach 3 pages. For a 3.5-year career in QA, a tighter 2-page CV would be more impactful.</li>
-<li><strong>Date formatting inconsistency:</strong> Some dates use &ldquo;August 2021&rdquo; format, others would benefit from consistent formatting throughout.</li>
-<li><strong>No hyperlinks to projects or portfolios:</strong> No GitHub, no portfolio, no links to automation frameworks or open-source contributions. For an SDET role, demonstrable code is valuable.</li>
-<li><strong>Bullet point density:</strong> The Senior QA role at Sysco LABS has 11 bullet points. This is excessive. The top 6-7 most impactful points should be retained; the rest can be consolidated or removed.</li>
-</ul>
-<hr />
-<h2 id="alignment-with-lseg-jd-gap-summary">Alignment with LSEG JD — Gap Summary</h2>
-<table class="wide-table">
-<thead>
-<tr>
-<th>JD Requirement</th>
-<th>CV Evidence</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bachelor&rsquo;s degree in CS/SE/EE or related</td>
-<td>BSc in Information Systems + MSc + MBA</td>
-<td><strong>Strong</strong></td>
-</tr>
-<tr>
-<td>3+ years testing experience</td>
-<td>~3.5 years QA experience</td>
-<td><strong>Meets</strong> (borderline)</td>
-</tr>
-<tr>
-<td>Software testing methodologies and tools</td>
-<td>ISTQB certified, multiple frameworks</td>
-<td><strong>Strong</strong></td>
-</tr>
-<tr>
-<td>Excellent English</td>
-<td>CV well-written; international education</td>
-<td><strong>Likely strong</strong></td>
-</tr>
-<tr>
-<td>Windows Server / Unix/Linux proficiency</td>
-<td>Not mentioned</td>
-<td><strong>Gap</strong></td>
-</tr>
-<tr>
-<td>AWS/Azure familiarity</td>
-<td>Listed in skills, mentioned in experience</td>
-<td><strong>Meets</strong></td>
-</tr>
-<tr>
-<td>Formal SDLC / CMM/CMMI</td>
-<td>Not mentioned</td>
-<td><strong>Gap</strong></td>
-</tr>
-<tr>
-<td>Test automation &amp; programming (2+ years)</td>
-<td>3.5 years with Java/Selenium/REST Assured</td>
-<td><strong>Strong</strong></td>
-</tr>
-<tr>
-<td>Networking / TCP/IP</td>
-<td>Not mentioned</td>
-<td><strong>Gap</strong></td>
-</tr>
-<tr>
-<td>Financial markets experience</td>
-<td>Not mentioned (CA partial qualification exists)</td>
-<td><strong>Gap</strong></td>
-</tr>
-<tr>
-<td>Process improvement</td>
-<td>Mentioned shift-left, test optimisation</td>
-<td><strong>Meets</strong></td>
-</tr>
-<tr>
-<td>Customer service awareness</td>
-<td>Cross-functional collaboration mentioned</td>
-<td><strong>Meets</strong></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="recommendations-for-improvement">Recommendations for Improvement</h2>
-<ol>
-<li>
-<p><strong>Address the career gap proactively.</strong> Add a brief note about continued professional development during 2023-2026 (online courses, certifications, personal projects, etc.).</p>
-</li>
-<li>
-<p><strong>Be precise about experience duration.</strong> Say &ldquo;approximately three and a half years&rdquo; rather than &ldquo;over four years&rdquo; to maintain credibility.</p>
-</li>
-<li>
-<p><strong>Add a &ldquo;Financial Domain&rdquo; angle.</strong> Leverage the CA qualification more explicitly. Even a line about understanding financial reporting, accounting systems, or audit processes would help for LSEG.</p>
-</li>
-<li>
-<p><strong>Add infrastructure skills.</strong> If the MSc in Cloud Native Computing covered Docker, Kubernetes, Linux, or networking — mention these explicitly.</p>
-</li>
-<li>
-<p><strong>Expand performance testing.</strong> If there is any performance testing experience, detail it with tools and results. If not, consider gaining experience with JMeter or k6 and adding it.</p>
-</li>
-<li>
-<p><strong>Add a GitHub or portfolio link.</strong> Even a small personal project demonstrating automation framework design would significantly strengthen the application.</p>
-</li>
-<li>
-<p><strong>Trim the &ldquo;Other Experience&rdquo; section.</strong> Reduce the student assistant and teaching roles to 1-2 lines each, or move them to a brief &ldquo;Additional Experience&rdquo; line. Use the freed space for more relevant technical content.</p>
-</li>
-<li>
-<p><strong>Consolidate bullet points.</strong> Reduce the Senior QA role from 11 to 7 impactful bullets. Merge related points (e.g., combine the mentoring and workshop bullets).</p>
-</li>
-<li>
-<p><strong>Add database and data testing examples.</strong> Mention any SQL-based validation, data migration testing, or ETL verification work.</p>
-</li>
-<li>
-<p><strong>Consider adding a &ldquo;Technical Projects&rdquo; section</strong> highlighting the MSc dissertation or any significant automation framework built from scratch — this would help compensate for the limited employer diversity.</p>
-</li>
-</ol>
-<hr />
-<h2 id="overall-assessment">Overall Assessment</h2>
-<p><strong>The CV presents a competent QA professional with genuine technical skills and strong academic credentials.</strong> The quantified achievements and ISTQB Advanced certification are genuine differentiators. However, the combination of a 2.5-year gap from QA work, single-employer experience, and missing alignment with several LSEG-specific requirements (financial domain, infrastructure skills, performance testing, CMM/CMMI) creates a challenging profile for this particular role.</p>
-<p>With targeted improvements — particularly addressing the gap narrative, adding infrastructure and domain-relevant skills, and tightening the overall presentation — this CV could be significantly strengthened for the LSEG opportunity.</p>
-<p><strong>Fit Rating for LSEG Associate Lead SDET Role: 6/10</strong></p>
-<p>The candidate has the right foundation and certifications, but the gaps in financial domain knowledge, infrastructure skills, and recent hands-on QA experience bring the fit score down. The academic credentials (MSc + MBA) and ISTQB Advanced certification are above-average for this level, which partially compensates.</p>
-</section>
-
-<section class="chapter" id="ch-5">
     <h1>Interviewer: Amy Lee</h1>
     
 <p><strong>Role:</strong> Director, Quality Engineering
@@ -1370,7 +618,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </ul>
 </section>
 
-<section class="chapter" id="ch-6">
+<section class="chapter" id="ch-3">
     <h1>Interviewer: Andy Purtell</h1>
     
 <p><strong>Role:</strong> Manager, Quality Engineering (QE Manager)
@@ -1487,7 +735,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </ul>
 </section>
 
-<section class="chapter" id="ch-7">
+<section class="chapter" id="ch-4">
     <h1>Personalised Interview Guide</h1>
     
 <p><strong>Target Role:</strong> Associate Lead, SDET — LSEG (R0098555)
@@ -2350,7 +1598,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <p>Go in prepared, be honest about gaps, be enthusiastic about the opportunity, and let your genuine strengths speak for themselves.</p>
 </section>
 
-<section class="chapter" id="ch-8">
+<section class="chapter" id="ch-5">
     <h1>Question Bank Index</h1>
     
 <p><strong>Role:</strong> Associate Lead, Software Development Engineer in Test (SDET)
@@ -2552,7 +1800,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </ul>
 </section>
 
-<section class="chapter" id="ch-9">
+<section class="chapter" id="ch-6">
     <h1>Testing Fundamentals</h1>
     
 <hr />
@@ -2850,7 +2098,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 - Show that you communicate risk assessments to stakeholders so they can make informed decisions about test coverage and release readiness.</p>
 </section>
 
-<section class="chapter" id="ch-10">
+<section class="chapter" id="ch-7">
     <h1>Test Automation & Programming</h1>
     
 <hr />
@@ -3370,7 +2618,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 - For financial systems: &ldquo;At LSEG, I&rsquo;d expect database testing to include market data validation — ensuring prices, volumes, and timestamps in the database match what was received from exchange feeds.&rdquo;</p>
 </section>
 
-<section class="chapter" id="ch-11">
+<section class="chapter" id="ch-8">
     <h1>Performance Testing</h1>
     
 <blockquote>
@@ -3622,7 +2870,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 - Show awareness of database-specific tuning: PostgreSQL&rsquo;s <code>work_mem</code>, Oracle&rsquo;s SGA, SQL Server&rsquo;s max degree of parallelism.</p>
 </section>
 
-<section class="chapter" id="ch-12">
+<section class="chapter" id="ch-9">
     <h1>Infrastructure, Cloud & Networking</h1>
     
 <hr />
@@ -3890,7 +3138,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 - In financial systems, data consistency across microservices is critical — mention eventual consistency patterns and how you test for them (e.g., verifying that a trade recorded in the order service eventually appears in the settlement service).</p>
 </section>
 
-<section class="chapter" id="ch-13">
+<section class="chapter" id="ch-10">
     <h1>Financial Domain</h1>
     
 <blockquote>
@@ -4153,7 +3401,7 @@ Reconciliation is the process of comparing two or more sets of data to verify th
 - Mention that reconciliation testing is particularly important during system migrations: &ldquo;When migrating to a new platform, we&rsquo;d run parallel reconciliation between old and new systems to validate data integrity.&rdquo;</p>
 </section>
 
-<section class="chapter" id="ch-14">
+<section class="chapter" id="ch-11">
     <h1>DevOps & SDLC</h1>
     
 <hr />
@@ -4376,7 +3624,7 @@ Reconciliation is the process of comparing two or more sets of data to verify th
 - In financial systems, quality metrics may need to be shared with compliance and audit teams — show awareness of this.</p>
 </section>
 
-<section class="chapter" id="ch-15">
+<section class="chapter" id="ch-12">
     <h1>Defect Management</h1>
     
 <hr />
@@ -4589,7 +3837,7 @@ Hotfixes are deployed under time pressure, but inadequate regression testing can
 - Show ownership: &ldquo;I schedule quarterly &lsquo;automation health reviews&rsquo; where I analyze test suite metrics and propose targeted cleanup work.&rdquo;</p>
 </section>
 
-<section class="chapter" id="ch-16">
+<section class="chapter" id="ch-13">
     <h1>Leadership & Soft Skills</h1>
     
 <hr />
@@ -4797,7 +4045,7 @@ Hotfixes are deployed under time pressure, but inadequate regression testing can
 - Relate to the role: &ldquo;For this LSEG role, I&rsquo;ve been researching financial testing practices, FIX protocol, and market data testing approaches.&rdquo;</p>
 </section>
 
-<section class="chapter" id="ch-17">
+<section class="chapter" id="ch-14">
     <h1>Scenario-Based Questions</h1>
     
 <hr />
@@ -5138,7 +4386,7 @@ Hotfixes are deployed under time pressure, but inadequate regression testing can
 - Relate to the LSEG value of <strong>Excellence</strong>: &ldquo;Accepting disabled tests as normal is accepting mediocrity. Excellence means maintaining the tools we depend on.&rdquo;</p>
 </section>
 
-<section class="chapter" id="ch-18">
+<section class="chapter" id="ch-15">
     <h1>Personal & Career</h1>
     
 <blockquote>
@@ -5417,7 +4665,7 @@ Hotfixes are deployed under time pressure, but inadequate regression testing can
 - The dynamic between them: Amy screens for &ldquo;Will this person grow into a quality leader?&rdquo; Andy screens for &ldquo;Can this person actually do the work?&rdquo; You need to pass both filters.</p>
 </section>
 
-<section class="chapter" id="ch-19">
+<section class="chapter" id="ch-16">
     <h1>AI & Modern QA</h1>
     
 <blockquote>
@@ -5735,7 +4983,7 @@ Hotfixes are deployed under time pressure, but inadequate regression testing can
 - For Andy: frame in terms of practical value — reduced maintenance, fewer false positives, faster triage.</p>
 </section>
 
-<section class="chapter" id="ch-20">
+<section class="chapter" id="ch-17">
     <h1>Security Testing</h1>
     
 <blockquote>
@@ -6122,7 +5370,7 @@ Hotfixes are deployed under time pressure, but inadequate regression testing can
 - For financial systems: &ldquo;In a financial infrastructure company like LSEG, security scanning isn&rsquo;t a nice-to-have — it&rsquo;s a regulatory requirement. Veracode or similar tools should be part of every pipeline.&rdquo;</p>
 </section>
 
-<section class="chapter" id="ch-21">
+<section class="chapter" id="ch-18">
     <h1>General SDET Questions</h1>
     
 <p>A comprehensive collection of Software Development Engineer in Test (SDET) interview questions organized by category, with detailed answers.</p>
@@ -8102,7 +7350,7 @@ Hotfixes are deployed under time pressure, but inadequate regression testing can
 <p><em>This document covers the core knowledge areas expected of an SDET. Use it as a study guide, interview preparation resource, or team knowledge-sharing reference.</em></p>
 </section>
 
-<section class="chapter" id="ch-22">
+<section class="chapter" id="ch-19">
     <h1>AWS Cloud Guide</h1>
     
 <p><strong>For:</strong> Udani Weerasinghe | <strong>Role:</strong> Associate Lead SDET, LSEG
@@ -8961,7 +8209,7 @@ Hotfixes are deployed under time pressure, but inadequate regression testing can
 <p><em>Focus your study on Sections 1–6 and 11 — these are the most likely interview topics given the LSEG role and the interviewers&rsquo; infrastructure backgrounds. Sections 7–10 are valuable for demonstrating depth if the conversation goes there.</em></p>
 </section>
 
-<section class="chapter" id="ch-23">
+<section class="chapter" id="ch-20">
     <h1>DevOps Questions</h1>
     
 <p><strong>Context:</strong> LSEG Associate Lead SDET role — the JD places this role &ldquo;as a member of a DevOps team&rdquo; and requires CI/CD, cloud, and infrastructure familiarity.</p>
